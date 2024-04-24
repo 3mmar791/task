@@ -19,10 +19,10 @@ function countElementOccurrencesClass(className) {
 // function for Id name elements
 function countElementOccurrencesId(elementId) {
   // Get all elements of the specified type
-  const elements = document.getElementById(elementId);
+  var element = document.getElementById(elementId);
 
   // Return the total count
-  return 1;
+  return !!element;
 }
 
 // function for name attrebutes elements
